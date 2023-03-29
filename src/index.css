@@ -1,13 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  text-align: left;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+ul li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: rgb(62, 139, 255);
+  font-weight: 700 !important;
+  text-transform: uppercase;
+}
+.col-left {
+  color: #fff;
+  background-color: rgb(62, 139, 255);
+  padding-left: 0;
+}
+.col-left h2,
+.col-left h3 {
+  color: #fff;
+}
+.image img {
+  width: 100%;
+}
+.name{
+  margin-top: 25px;
+}
+.address{
+  border-bottom: 1px solid;
+  margin-bottom: 25px;
+}
+.address ul li{
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.address ul li .icon{
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.arrow{
+  border-bottom: 1px solid rgb(62, 139, 255);
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+.time-line {
+  border-left: 2px solid rgb(62, 139, 255);
+  padding-left: 15px;
+  position: relative;
+  margin-bottom: 25px;
+}
+.time-line::after{
+  content: " ";
+  width: 100%;
+  height: 1px;
+  background-color: rgb(62, 139, 255);
+  position: absolute;
+  left: 0;
+}
+.time-line .milestones {
+  position: relative;
+}
+.time-line .milestones::after {
+  content: " ";
+  background-color: #fff;
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid;
+  left: -21px;
+  width: 10px;
+  height: 15px;
+  top: 5px;
+}
+.hobbies,
+.exp,
+.education{
+  margin-bottom: 40px;
+}
+.hobbies ul{
+  display: flex;
+  justify-content: space-evenly;
+}
+.hobbies ul li{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid  rgb(62, 139, 255);
+  border-radius: 50px;
+  position: relative;
+}
+.hobbies ul li::after{
+  content: "";
+  background-color: red;
+  width: 1px;
+  height: 1px;
+  position: absolute;
+}
+.hobbies ul li svg path{
+  fill: rgb(62, 139, 255) !important;
 }
